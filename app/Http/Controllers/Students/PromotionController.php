@@ -26,4 +26,18 @@ class PromotionController extends Controller
     {
         return $this->Promotions->store($request);
     }
+
+    //=============student promotion Management===========
+
+    public function create()
+    {
+            return $this->Promotions->create();
+
+    }
+
+    public function destroy(Request $request)
+    {
+            return $this->Promotions->destroy($request);
+
+    }
 }

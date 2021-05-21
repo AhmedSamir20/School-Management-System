@@ -34,6 +34,16 @@ return [
     'created_at'                => 'Created At',
     'Download'                  => 'Download',
     'delete'                    => 'Delete',
+    'Error_no_data'             => 'Not Found Data In student table',
+    'Retreat-student'           => 'Are you Sure to Retreat student from Promotion',
+    'Previous-school-grade'     => 'Previou School Stage',
+    'previous-school-year'      => 'previous School Year',
+    'Previous-school-Classroom' => 'Previous School Grade',
+    'Previous-school-section'   => 'Previous School Section',
+    'current-school-grade'      => 'current School Stage',
+    'current-school-year'       => 'Current School Year',
+    'current-school-classroom'  => 'Current School Classroom',
+    'current-school-section'    => 'Current School Section',
 
 
 ];

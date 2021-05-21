@@ -19,10 +19,11 @@ class CreatePromotionsTable extends Migration
             $table->unsignedBigInteger('from_grade');
             $table->unsignedBigInteger('from_Classroom');
             $table->unsignedBigInteger('from_section');
-
+            $table->string('from_academic_year');
             $table->unsignedBigInteger('to_grade');
             $table->unsignedBigInteger('to_Classroom');
             $table->unsignedBigInteger('to_section');
+            $table->string('to_academic_year');
             $table->timestamps();
         });
 

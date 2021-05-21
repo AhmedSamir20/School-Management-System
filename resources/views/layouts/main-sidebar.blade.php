@@ -67,6 +67,7 @@
                         <ul id="students-menu" class="collapse" data-parent="#sidebarnav">
                             <li> <a href="{{route('Students.index')}}">{{__('main-trans.student-list')}}</a> </li>
                             <li> <a href="{{route('Promotions.index')}}">{{__('main-trans.student-promotion')}}</a> </li>
+                            <li> <a href="{{route('Promotions.create')}}">{{__('main-trans.student-promotion-man')}}</a> </li>
                         </ul>
                     </li>
 
