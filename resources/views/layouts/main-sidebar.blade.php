@@ -86,16 +86,16 @@
                             <li>
                                 <a href="javascript:void(0);" data-toggle="collapse" data-target="#Students_upgrade">{{trans('main-trans.Students_Promotions')}}<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
                                 <ul id="Students_upgrade" class="collapse">
-                                    <li> <a href="{{route('Promotions.index')}}">{{trans('main-trans.add_Promotion')}}</a></li>
-                                    <li> <a href="{{route('Promotions.create')}}">{{trans('main-trans.list_Promotions')}}</a> </li>
+                                    <li> <a href="{{route('Promotions.create')}}">{{trans('main-trans.add_Promotion')}}</a></li>
+                                    <li> <a href="{{route('Promotions.index')}}">{{trans('main-trans.list_Promotions')}}</a> </li>
                                 </ul>
                             </li>
 
                             <li>
                                 <a href="javascript:void(0);" data-toggle="collapse" data-target="#Graduate students">{{trans('main-trans.Graduate_students')}}<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
                                 <ul id="Graduate students" class="collapse">
-                                    <li> <a href="">{{trans('main-trans.add_Graduate')}}</a> </li>
-                                    <li> <a href="">{{trans('main-trans.list_Graduate')}}</a> </li>
+                                    <li> <a href="{{route('Graduated.create')}}">{{trans('main-trans.add_Graduate')}}</a> </li>
+                                    <li> <a href="{{route('Graduated.index')}}">{{trans('main-trans.list_Graduate')}}</a> </li>
                                 </ul>
                             </li>
                         </ul>

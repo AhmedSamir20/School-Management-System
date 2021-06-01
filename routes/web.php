@@ -86,9 +86,14 @@ Route::group(
 
 
     });
-//==============================Students Promotions============================
+    //==============================Students Promotions============================
     Route::group(['namespace' => 'Students'],function (){
         Route::resource('Promotions','PromotionController');
+
+    });
+    //==============================Students Graduated============================
+    Route::group(['namespace' => 'Students'],function (){
+        Route::resource('Graduated','GraduatedController');
 
     });
 

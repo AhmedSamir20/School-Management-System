@@ -40,6 +40,7 @@ return [
     'Error_no_data'             => 'Not Found Data In student table',
     'Retreat-student'           => 'Are you Sure to return student from Promotion',
     'Retreat-all-student'       => 'Are you Sure to all return student from Promotion',
+    'Graduate_student'          => 'Are you Sure to all return student from Graduated',
     'Previous-school-grade'     => 'Previou School Stage',
     'previous-school-year'      => 'previous School Year',
     'Previous-school-Classroom' => 'Previous School Grade',

@@ -4,14 +4,14 @@ namespace App\Http\Controllers\Teachers;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreTeachers;
-use App\Repository\Teacher\TeacherRepository;
+use App\Interfaces\Teacher\TeacherRepositoryInterface;
 use Illuminate\Http\Request;
 
 class TeacherController extends Controller
 {
 
     protected $Teacher;
-    public function __construct(TeacherRepository $Teacher)
+    public function __construct(TeacherRepositoryInterface $Teacher)
     {
         $this->Teacher=$Teacher;
     }
@@ -19,7 +19,6 @@ class TeacherController extends Controller
     public function index()
     {
         $Teachers = $this->Teacher->getAllTeachers();
-        //$Teachers = Teacher::all();
         return view('pages.Teachers.Teachers',compact('Teachers'));
     }
 

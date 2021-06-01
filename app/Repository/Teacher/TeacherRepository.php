@@ -39,7 +39,7 @@ class TeacherRepository implements TeacherRepositoryInterface
             $Teachers->Joining_Date = $request->Joining_Date;
             $Teachers->Address = $request->Address;
             $Teachers->save();
-            toastr()->success(trans('messages.success'));
+            toastr()->success(trans('message.success'));
             return redirect()->route('Teachers.create');
         }
         catch (\Exception $e) {
@@ -64,7 +64,7 @@ class TeacherRepository implements TeacherRepositoryInterface
             $Teachers->Joining_Date = $request->Joining_Date;
             $Teachers->Address = $request->Address;
             $Teachers->save();
-            toastr()->success(trans('messages.Update'));
+            toastr()->success(trans('message.update'));
             return redirect()->route('Teachers.index');
         }
         catch (\Exception $e) {

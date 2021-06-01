@@ -49,4 +49,5 @@ return [
     'current-school-section'        => 'لقسم الدراسي الحالي',
     'Retreat-student'               => 'هل انت متاك من عملية تراجع كافة الطلاب ؟',
     'Retreat-all-student'           => 'هل انت متاكد من عملية تراجع الطالب ؟',
+    'Graduate_student'           => 'هل انت متاكد من الغاء عملية التخرج ؟',
 ];
