@@ -112,7 +112,20 @@ class StudentPromotionRepository implements StudentPromotionRepositoryInterface
 
 
             } else {
+                $Promotion = Promotion::findorfail($request->id);
+                student::where('id', $Promotion->student_id)
+                    ->update([
+                        'Grade_id'       => $Promotion->from_grade,
+                        'Classroom_id'   => $Promotion->from_Classroom,
+                        'section_id'     => $Promotion->from_section,
+                        'academic_year'  => $Promotion->from_academic_year,
+                    ]);
 
+
+                Promotion::destroy($request->id);
+                DB::commit();
+                toastr()->error(trans('message.delete'));
+                return redirect()->back();
             }
 
         } catch (Exception $e) {

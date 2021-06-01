@@ -35,6 +35,9 @@ return [
     'created_at'                    => 'تاريخ الاضافة',
     'Download'                      => 'تحميل',
     'delete'                        => 'حذف',
+    'return_all'                    => 'إرجاع الكل',
+    'return_student'                =>'ارجاع الطالب',
+    'Graduated_student'             =>'تخرج الطالب',
     'Error_no_data'                 => 'لاتوجد بيانات في جدول الطلاب',
     'Previous-school-grade'         => 'المرحلة الدراسية السابقة',
     'previous-school-year'          => 'السنة الدراسية السابقة',
@@ -45,4 +48,5 @@ return [
     'current-school-classroom'      => 'الصف الدراسي الحالي',
     'current-school-section'        => 'لقسم الدراسي الحالي',
     'Retreat-student'               => 'هل انت متاك من عملية تراجع كافة الطلاب ؟',
+    'Retreat-all-student'           => 'هل انت متاكد من عملية تراجع الطالب ؟',
 ];

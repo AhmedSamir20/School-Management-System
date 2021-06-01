@@ -3,18 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="4cb23931-db21-4a14-be98-dbad84f9728f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Students/PromotionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Students/PromotionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Interfaces/Promotions/StudentPromotionRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Interfaces/Promotions/StudentPromotionRepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Promotion.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Promotion.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Repository/Promotions/StudentPromotionRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Promotions/StudentPromotionRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_17_150042_create_promotions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_17_150042_create_promotions_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/Students_trans.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/Students_trans.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/main-trans.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/main-trans.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/Students_trans.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/Students_trans.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/main-trans.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/main-trans.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Students/AJAX_Fill_Form/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Students/AJAX_Fill_Form/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Students/Promotion/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Students/Promotion/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Students/Promotion/Delete_all.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Students/Promotion/Delete_all.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Students/Promotion/Management.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Students/Promotion/Management.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +194,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="ToolWindowProblems.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/Pages/Students" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -282,7 +277,9 @@
       <workItem from="1621287046597" duration="3696000" />
       <workItem from="1621553480261" duration="916000" />
       <workItem from="1621595528989" duration="12411000" />
-      <workItem from="1621630818474" duration="879000" />
+      <workItem from="1621630818474" duration="1066000" />
+      <workItem from="1622484073499" duration="2144000" />
+      <workItem from="1622499620624" duration="4917000" />
     </task>
     <servers />
   </component>

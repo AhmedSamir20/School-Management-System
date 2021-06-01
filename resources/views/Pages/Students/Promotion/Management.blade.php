@@ -22,7 +22,7 @@
                         <div class="card card-statistics h-100">
                             <div class="card-body">
                                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Delete_all">
-                                    تراجع الكل
+                                    {{__('Students_trans.return_all')}}
                                 </button><br><br><br>
                                 <div class="table-responsive">
                                     <table id="datatable" class="table  table-hover table-sm table-bordered p-0"
@@ -61,20 +61,12 @@
 
 
                                                 <td>
-                                                    <a href="{{route('Students.edit',$promotion->id)}}"
-                                                       class="btn btn-info btn-sm" role="button" aria-pressed="true"><i
-                                                            class="fa fa-edit"></i></a>
-                                                    <button type="button" class="btn btn-danger btn-sm"
-                                                            data-toggle="modal"
-                                                            data-target="#delete{{ $promotion->id }}"
-                                                            title="{{ trans('Grades_trans.Delete') }}"><i
-                                                            class="fa fa-trash"></i></button>
-                                                    <a href="{{route('Students.show',$promotion->id)}}"
-                                                       class="btn btn-warning btn-sm" role="button" aria-pressed="true"><i
-                                                            class="far fa-eye"></i></a>
+                                                    <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#Delete_one{{$promotion->id}}">{{__('Students_trans.return_student')}}</button>
+                                                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#">{{__('Students_trans.Graduated_student')}} </button>
                                                 </td>
                                             </tr>
                                                 @include('Pages.Students.Promotion.Delete_all')
+                                                @include('Pages.Students.Promotion.delete_one')
                                         @endforeach
 
                                     </table>

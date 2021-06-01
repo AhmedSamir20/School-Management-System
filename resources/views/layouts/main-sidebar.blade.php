@@ -57,17 +57,47 @@
 
 
                     <!-- students-->
+{{--                    <li>--}}
+{{--                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#students-menu">--}}
+{{--                            <div class="pull-left"><i class="fas fa-user-graduate"></i></i></i><span--}}
+{{--                                    class="right-nav-text">{{trans('main-trans.students')}}</span></div>--}}
+{{--                            <div class="pull-right"><i class="ti-plus"></i></div>--}}
+{{--                            <div class="clearfix"></div>--}}
+{{--                        </a>--}}
+{{--                        <ul id="students-menu" class="collapse" data-parent="#sidebarnav">--}}
+{{--                            <li> <a href="{{route('Students.index')}}">{{__('main-trans.student-list')}}</a> </li>--}}
+{{--                            <li> <a href="{{route('Promotions.index')}}">{{__('main-trans.student-promotion')}}</a> </li>--}}
+{{--                            <li> <a href="{{route('Promotions.create')}}">{{__('main-trans.student-promotion-man')}}</a> </li>--}}
+{{--                        </ul>--}}
+{{--                    </li>--}}
+
+                <!-- students-->
                     <li>
-                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#students-menu">
-                            <div class="pull-left"><i class="fas fa-user-graduate"></i></i></i><span
-                                    class="right-nav-text">{{trans('main-trans.students')}}</span></div>
-                            <div class="pull-right"><i class="ti-plus"></i></div>
-                            <div class="clearfix"></div>
-                        </a>
-                        <ul id="students-menu" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="{{route('Students.index')}}">{{__('main-trans.student-list')}}</a> </li>
-                            <li> <a href="{{route('Promotions.index')}}">{{__('main-trans.student-promotion')}}</a> </li>
-                            <li> <a href="{{route('Promotions.create')}}">{{__('main-trans.student-promotion-man')}}</a> </li>
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#students-menu"><i class="fas fa-user-graduate"></i>{{trans('main-trans.students')}}<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
+                        <ul id="students-menu" class="collapse">
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="collapse" data-target="#Student_information">{{trans('main-trans.Student_information')}}<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
+                                <ul id="Student_information" class="collapse">
+                                    <li> <a href="{{route('Students.create')}}">{{trans('main-trans.add_student')}}</a></li>
+                                    <li> <a href="{{route('Students.index')}}">{{trans('main-trans.list_students')}}</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="collapse" data-target="#Students_upgrade">{{trans('main-trans.Students_Promotions')}}<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
+                                <ul id="Students_upgrade" class="collapse">
+                                    <li> <a href="{{route('Promotions.index')}}">{{trans('main-trans.add_Promotion')}}</a></li>
+                                    <li> <a href="{{route('Promotions.create')}}">{{trans('main-trans.list_Promotions')}}</a> </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="collapse" data-target="#Graduate students">{{trans('main-trans.Graduate_students')}}<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
+                                <ul id="Graduate students" class="collapse">
+                                    <li> <a href="">{{trans('main-trans.add_Graduate')}}</a> </li>
+                                    <li> <a href="">{{trans('main-trans.list_Graduate')}}</a> </li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
 
