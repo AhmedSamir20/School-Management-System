@@ -78,25 +78,22 @@ Route::group(
     //==============================Students============================
     Route::group(['namespace' => 'Students'], function () {
         Route::resource('Students', 'StudentController');
+        //-------------------------- start get data with Ajax------------------
         Route::get('/Get_classrooms/{id}', 'StudentController@Get_classrooms');
         Route::get('/Get_Sections/{id}', 'StudentController@Get_Sections');
+        //-------------------------- end get data with Ajax------------------
         Route::post('Upload_attachment', 'StudentController@Upload_attachment')->name('Upload_attachment');
         Route::get('Download_attachment/{studentsname}/{filename}', 'StudentController@Download_attachment')->name('Download_attachment');
         Route::post('Delete_attachment', 'StudentController@Delete_attachment')->name('Delete_attachment');
 
-
-    });
-    //==============================Students Promotions============================
-    Route::group(['namespace' => 'Students'],function (){
+        //-------------------------- Students Promotions------------------
         Route::resource('Promotions','PromotionController');
-
-    });
-    //==============================Students Graduated============================
-    Route::group(['namespace' => 'Students'],function (){
+        //-------------------------- Students Graduated------------------
         Route::resource('Graduated','GraduatedController');
+        //-------------------------- Students Fees------------------
+        Route::resource('Fees','FeesController');
 
     });
-
 
 });
 

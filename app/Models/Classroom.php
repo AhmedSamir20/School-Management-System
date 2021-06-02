@@ -19,7 +19,7 @@ class Classroom extends Model
     // علاقة بين الصفوف المراحل الدراسية لجلب اسم المرحلة في جدول الصفوف
     public function grades()
     {
-        return $this->belongsTo('App\Models\Grade', 'grade_id');
+        return $this->belongsTo(Grade::class, 'grade_id');
     }
 
 //    public function getNameAttribute()

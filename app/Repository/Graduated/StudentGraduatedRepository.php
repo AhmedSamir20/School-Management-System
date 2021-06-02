@@ -14,7 +14,6 @@ class StudentGraduatedRepository implements StudentGraduatedRepositoryInterface
     public function index()
     {
         $students = Student::onlyTrashed()->get();
-        //$students =Student::all();
         return view('Pages.Students.Graduated.index',compact('students'));
     }
 
@@ -31,7 +30,7 @@ class StudentGraduatedRepository implements StudentGraduatedRepositoryInterface
                     ->where('section_id',$request->section_id)->get();
 
         if($students->count() < 1){
-            return redirect()->back()->with('error_Graduated', __('لاتوجد بيانات في جدول الطلاب'));
+            return redirect()->back()->with('error_Graduated', __('Students_trans.Error_no_data'));
         }
 
         foreach ($students as $student){
@@ -46,7 +45,8 @@ class StudentGraduatedRepository implements StudentGraduatedRepositoryInterface
     {
         student::onlyTrashed()->where('id', $request->id)->first()->restore();
         toastr()->success(trans('message.success'));
-        return redirect()->back();    }
+        return redirect()->back();
+    }
 
     public function destroy($request)
     {

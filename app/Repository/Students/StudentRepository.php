@@ -149,14 +149,14 @@ class StudentRepository implements StudentRepositoryInterface
 
     }
 
-    //Get Classrooms
+    //Get Classrooms use AJAx
     public function Get_classrooms($id)
     {
         $list_classes = Classroom::where("grade_id", $id)->pluck("Name_class", "id");
         return $list_classes;
     }
 
-    //Get Sections
+    //Get Sections use AJAx
     public function Get_Sections($id)
     {
         $list_sections = Section::where("class_id", $id)->pluck("Name_Section", "id");

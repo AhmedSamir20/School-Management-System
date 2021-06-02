@@ -3,15 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="4cb23931-db21-4a14-be98-dbad84f9728f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Teachers/TeacherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Teachers/TeacherController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Classroom.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Classroom.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/RepoServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepoServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/Teacher/TeacherRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Teacher/TeacherRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_03_060842_create_students_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_03_060842_create_students_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/Graduated/StudentGraduatedRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Graduated/StudentGraduatedRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/Students/StudentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Students/StudentRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/Students_trans.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/Students_trans.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/Students_trans.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/Students_trans.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +196,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="ToolWindowProblems.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/en" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -208,8 +209,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\project\School Management System\resources\views\Pages\Students" />
       <recent name="F:\project\School Management System\resources\lang\en" />
+      <recent name="F:\project\School Management System\resources\views\Pages\Students" />
       <recent name="F:\project\School Management System\app\Interfaces\Students" />
       <recent name="F:\project\School Management System\app\Http\Controllers\Students" />
       <recent name="C:\wamp64\www\projects_laravel\School Management System\resources\views\Pages\Sections" />
@@ -284,6 +285,8 @@
       <workItem from="1622499620624" duration="5402000" />
       <workItem from="1622554727322" duration="8215000" />
       <workItem from="1622588383792" duration="484000" />
+      <workItem from="1622590734569" duration="9160000" />
+      <workItem from="1622638927962" duration="4702000" />
     </task>
     <servers />
   </component>
