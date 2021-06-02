@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cb23931-db21-4a14-be98-dbad84f9728f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Classroom.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Classroom.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RepoServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepoServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/Graduated/StudentGraduatedRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Graduated/StudentGraduatedRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/Students/StudentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Students/StudentRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/Students_trans.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/Students_trans.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/Fees/FeesRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Fees/FeesRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +276,7 @@
       <workItem from="1622554727322" duration="8215000" />
       <workItem from="1622588383792" duration="484000" />
       <workItem from="1622590734569" duration="9160000" />
-      <workItem from="1622638927962" duration="4702000" />
+      <workItem from="1622638927962" duration="5448000" />
     </task>
     <servers />
   </component>
