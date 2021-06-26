@@ -14,31 +14,34 @@ class TeacherRepository implements TeacherRepositoryInterface
 
     public function getAllTeachers()
     {
-        return Teacher::all();
+        $Teachers=Teacher::all();
+        return view('pages.Teachers.index',compact('Teachers'));
+
     }
 
-    public function GetSpecializations()
-    {
 
-        return Specialization::all();
-    }
-    public function GetGenders()
+    public function createTeacher()
     {
-        return  Gender::all();
+        $data=[];
+        $data['specializations']=Specialization::all();
+        $data['genders']=Gender::all();
+        return view('pages.Teachers.create',$data);
     }
 
     public function StoreTeacher($request)
     {
         try {
-            $Teachers = new Teacher();
-            $Teachers->Email = $request->Email;
-            $Teachers->Password =  Hash::make($request->Password);
-            $Teachers->Name = ['en' => $request->Name_en, 'ar' => $request->Name_ar];
-            $Teachers->Specialization_id = $request->Specialization_id;
-            $Teachers->Gender_id = $request->Gender_id;
-            $Teachers->Joining_Date = $request->Joining_Date;
-            $Teachers->Address = $request->Address;
-            $Teachers->save();
+
+            Teacher::create([
+                'Name'=> ['en' => $request->Name_en, 'ar' => $request->Name_ar],
+                'Email'=> $request->Email,
+                'Password'=>  Hash::make($request->Password),
+                'Specialization_id'=> $request->Specialization_id,
+                'Gender_id'=> $request->Gender_id,
+                'Joining_Date'=> $request->Joining_Date,
+                'Address'=> $request->Address,
+            ]);
+
             toastr()->success(trans('message.success'));
             return redirect()->route('Teachers.create');
         }
@@ -49,21 +52,37 @@ class TeacherRepository implements TeacherRepositoryInterface
 
     public function EditTeacher($id)
     {
-    return Teacher::findOrFail($id);
+
+        $data=[];
+        $data['Teachers']=Teacher::findOrFail($id);;
+        $data['specializations']=Specialization::all();
+        $data['genders']=Gender::all();
+
+
+        return view('pages.Teachers.Edit',$data);
+
     }
+
+
 
     public function UpdateTeacher($request)
     {
+        $Teachers = Teacher::findOrFail($request->id);
+
+
         try {
-            $Teachers = Teacher::findOrFail($request->id);
-            $Teachers->Email = $request->Email;
-            $Teachers->Password =  Hash::make($request->Password);
-            $Teachers->Name = ['en' => $request->Name_en, 'ar' => $request->Name_ar];
-            $Teachers->Specialization_id = $request->Specialization_id;
-            $Teachers->Gender_id = $request->Gender_id;
-            $Teachers->Joining_Date = $request->Joining_Date;
-            $Teachers->Address = $request->Address;
-            $Teachers->save();
+            $Teachers->update([
+
+            'Email' => $request->Email,
+            'Password' =>  Hash::make($request->Password),
+            'Name' => ['en' => $request->Name_en, 'ar' => $request->Name_ar],
+            'Specialization_id' => $request->Specialization_id,
+            'Gender_id' => $request->Gender_id,
+            'Joining_Date' => $request->Joining_Date,
+            'Address' => $request->Address,
+
+            ]);
+
             toastr()->success(trans('message.update'));
             return redirect()->route('Teachers.index');
         }

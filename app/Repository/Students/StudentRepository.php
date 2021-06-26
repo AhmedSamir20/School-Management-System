@@ -32,19 +32,18 @@ class StudentRepository implements StudentRepositoryInterface
 
     public function create()
     {
-
+        $data = [];
         $data['my_classes'] = Grade::all();
         $data['parents'] = My_parent::all();
         $data['Genders'] = Gender::all();
         $data['nationals'] = Nationalitie::all();
         $data['bloods'] = Type_Blood::all();
-        return view('pages.Students.create', $data);
+        return view('Pages.Students.create', $data);
 
     }
 
     public function store($request)
     {
-
 
         try {
             DB::beginTransaction();
@@ -74,7 +73,7 @@ class StudentRepository implements StudentRepositoryInterface
                         // insert in image_table
                         $images = new Image();
                         $images->filename = $name;
-                        $images->imageable_iddssd= $students->id;
+                        $images->imageable_id= $students->id;
                         $images->imageable_type = 'App\Models\Student';
                         $images->save();
 
@@ -102,12 +101,12 @@ class StudentRepository implements StudentRepositoryInterface
 
     public function edit($id)
     {
-        $data['Grades'] = Grade::all();
-        $data['parents'] = My_Parent::all();
-        $data['Genders'] = Gender::all();
-        $data['nationals'] = Nationalitie::all();
-        $data['bloods'] = Type_Blood::all();
-        $data['Students'] = Student::findOrFail($id);
+        $data['Grades']     = Grade::all();
+        $data['parents']    = My_Parent::all();
+        $data['Genders']    = Gender::all();
+        $data['nationals']  = Nationalitie::all();
+        $data['bloods']     = Type_Blood::all();
+        $data['Students']   = Student::findOrFail($id);
         return view('pages.Students.edit', $data);
     }
 
@@ -118,24 +117,24 @@ class StudentRepository implements StudentRepositoryInterface
         try {
             $Student = Student::findorfail($request->id);
             $Student->update([
-                'name' => ['ar' => $request->name_ar, 'en' => $request->name_en],
-                'email' => $request->email,
-                'password' => Hash::make($request->password),
-                'gender_id' => $request->gender_id,
-                'nationalitie_id' => $request->nationalitie_id,
-                'blood_id' => $request->blood_id,
-                'Date_Birth' => $request->Date_Birth,
-                'Grade_id' => $request->Grade_id,
-                'Classroom_id' => $request->Classroom_id,
-                'section_id' => $request->section_id,
-                'parent_id' => $request->parent_id,
-                'academic_year' => $request->academic_year,
+                'name'              => ['ar' => $request->name_ar, 'en' => $request->name_en],
+                'email'             => $request->email,
+                'password'          => Hash::make($request->password),
+                'gender_id'         => $request->gender_id,
+                'nationalitie_id'   => $request->nationalitie_id,
+                'blood_id'          => $request->blood_id,
+                'Date_Birth'        => $request->Date_Birth,
+                'Grade_id'          => $request->Grade_id,
+                'Classroom_id'      => $request->Classroom_id,
+                'section_id'        => $request->section_id,
+                'parent_id'         => $request->parent_id,
+                'academic_year'     => $request->academic_year,
             ]);
 
 
             toastr()->success(trans('message.update'));
             return redirect()->route('Students.index');
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             return redirect()->back()->withErrors(['error' => $e->getMessage()]);
         }
     }
@@ -145,8 +144,6 @@ class StudentRepository implements StudentRepositoryInterface
         Student::destroy($request->id);
         toastr()->success(trans('message.delete'));
         return redirect()->route('Students.index');
-
-
     }
 
     //Get Classrooms use AJAx

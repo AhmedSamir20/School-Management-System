@@ -2,6 +2,7 @@
 @section('css')
     @toastr_css
 @section('title')
+
     {{trans('Students_trans.Student_details')}}
 @stop
 @endsection
@@ -78,7 +79,6 @@
                                     <div class="card card-statistics">
                                         <div class="card-body">
                                             <form method="post" action="{{route('Upload_attachment')}}" enctype="multipart/form-data">
-
                                                 {{ csrf_field() }}
                                                 <div class="col-md-3">
                                                     <div class="form-group">

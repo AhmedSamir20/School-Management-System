@@ -41,6 +41,7 @@ class StudentGraduatedRepository implements StudentGraduatedRepositoryInterface
         toastr()->success(trans('message.success'));
         return redirect()->route('Graduated.index');    }
 
+
     public function ReturnData($request)
     {
         student::onlyTrashed()->where('id', $request->id)->first()->restore();

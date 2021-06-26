@@ -29,7 +29,8 @@
                         </div>
                     @endif
 
-                    <form method="post" action="{{ route('Students.store') }}" autocomplete="off" enctype="multipart/form-data">
+                    <form method="post" action="{{ route('Students.store') }}" autocomplete="off"
+                          enctype="multipart/form-data">
                         @csrf
                         <h6 style="font-family: 'Cairo', sans-serif;color: blue">{{trans('Students_trans.personal_information')}}</h6>
                         <br>
@@ -38,7 +39,7 @@
                                 <div class="form-group">
                                     <label>{{trans('Students_trans.name_ar')}} : <span
                                             class="text-danger">*</span></label>
-                                    <input type="text" name="name_ar" class="form-control">
+                                    <input type="text" value="{{old('name_ar')}}" name="name_ar" class="form-control">
                                 </div>
                             </div>
 
@@ -46,7 +47,7 @@
                                 <div class="form-group">
                                     <label>{{trans('Students_trans.name_en')}} : <span
                                             class="text-danger">*</span></label>
-                                    <input class="form-control" name="name_en" type="text">
+                                    <input class="form-control" value="{{old('name_en')}}" name="name_en" type="text">
                                 </div>
                             </div>
                         </div>
@@ -55,7 +56,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>{{trans('Students_trans.email')}} : </label>
-                                    <input type="email" name="email" class="form-control">
+                                    <input type="email" name="email" value="{{old('email')}}" class="form-control">
                                 </div>
                             </div>
 
@@ -63,7 +64,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>{{trans('Students_trans.password')}} :</label>
-                                    <input type="password" name="password" class="form-control">
+                                    <input type="password" name="password" value="{{old('password')}}" class="form-control">
                                 </div>
                             </div>
 
@@ -174,6 +175,8 @@
                                         @for($year=$current_year; $year<=$current_year +1 ;$year++)
                                             <option value="{{ $year}}">{{ $year }}</option>
                                         @endfor
+
+
                                     </select>
                                 </div>
                             </div>
@@ -200,5 +203,5 @@
 @section('js')
     @toastr_js
     @toastr_render
-@include('Pages.Students.AJAX_Fill_Form.index')
+    @include('Pages.Students.AJAX_Fill_Form.index')
 @endsection

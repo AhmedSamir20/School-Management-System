@@ -90,11 +90,19 @@ Route::group(
         Route::resource('Promotions','PromotionController');
         //-------------------------- Students Graduated------------------
         Route::resource('Graduated','GraduatedController');
-        //-------------------------- Students Fees------------------
-        Route::resource('Fees','FeesController');
+
 
     });
 
+
+    Route::group(['namespace'=>'Fees'],function (){
+
+        //-------------------------- Students Fees------------------
+        Route::resource('Fees','FeesController');
+        //-------------------------- Students Fees------------------
+        Route::resource('Fees_Invoices','FeeInvoicesController');
+
+    });
 });
 
 

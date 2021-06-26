@@ -81,6 +81,14 @@
                                     @endfor
                                 </select>
                             </div>
+
+                            <div class="form-group col">
+                                <label for="inputZip">{{__('Fees.Fee_type')}}</label>
+                                <select class="custom-select mr-sm-2" name="Fee_type">
+                                    <option value="1">{{__('Fees.study_fees')}}</option>
+                                    <option value="2">{{__('Fees.bus_fee')}}</option>
+                                </select>
+                            </div>
                         </div>
 
                         <div class="form-group">

@@ -85,7 +85,7 @@
                                     <select class="custom-select mr-sm-2" name="nationalitie_id">
                                         <option selected disabled>{{trans('Parent_trans.Choose')}}...</option>
                                         @foreach($nationals as $nal)
-                                            <option value="{{ $nal->id }}" {{$nal->id == $Students->nationalitie_id ? 'selected' : ""}}>{{ $nal->Name }}</option>
+                                            <option value="{{ $nal->id }}" {{$nal->id == $Students->nationalitie_id ? 'selected' : ""}}>{{ $nal->name }}</option>
                                         @endforeach
                                     </select>
                                 </div>

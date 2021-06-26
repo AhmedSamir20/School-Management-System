@@ -13,4 +13,8 @@ return [
     'Gender'            =>'Gender',
     'Joining_Date'      =>'Joining_Date',
     'Address'           =>'Address',
+    'Warning'           =>'Are you sure to delete data from Teacher ?',
+    'submit'            =>'Submit',
+    'Close'             =>'Close',
+    'Processes'         =>'Processes',
 ];

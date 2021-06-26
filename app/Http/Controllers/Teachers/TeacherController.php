@@ -18,17 +18,13 @@ class TeacherController extends Controller
 
     public function index()
     {
-        $Teachers = $this->Teacher->getAllTeachers();
-        return view('pages.Teachers.Teachers',compact('Teachers'));
+        return $this->Teacher->getAllTeachers();
+
     }
 
     public function create()
     {
-        $data=[];
-        $data['specializations']=$this->Teacher->GetSpecializations();
-        $data['genders']=$this->Teacher->GetGenders();
-
-        return view('pages.Teachers.create',$data);
+        return $this->Teacher->createTeacher();
     }
 
     public function store(StoreTeachers $request)
@@ -39,11 +35,7 @@ class TeacherController extends Controller
     public function edit($id)
     {
 
-        $data=[];
-        $data['specializations']=$this->Teacher->GetSpecializations();
-        $data['genders']=$this->Teacher->GetGenders();
-        $data['Teachers']=$this->Teacher->EditTeacher($id);
-        return view('pages.Teachers.Edit',$data);
+      return $this->Teacher->EditTeacher($id);
     }
 
 

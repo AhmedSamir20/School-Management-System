@@ -6,10 +6,8 @@ interface TeacherRepositoryInterface{
 
     // get all Teachers
     public function getAllTeachers();
-    // Get Specializations
-    public function GetSpecializations();
-    // Get Genders
-    public function GetGenders();
+    // create Teacher
+    public function createTeacher();
     // Store Teacher
     public function StoreTeacher($request);
     // Store Teacher

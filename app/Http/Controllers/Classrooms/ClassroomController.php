@@ -15,26 +15,20 @@ class ClassroomController extends Controller
 
   public function index()
   {
-
-        $My_Classes=Classroom::all();
-         $Grades=Grade::all();
-         return view('Pages.My_Classes.My_Classes',compact('My_Classes','Grades'));
+        $data=[];
+        $data['My_Classes'] =Classroom::all();
+        $data['Grades']     =Grade::all();
+        return view('Pages.My_Classes.index',$data);
   }
-
-
 
   public function store(StoreCalssroom $request)
   {
-
       $List_Classes=$request->List_Classes;
-
       try {
-
-            foreach ($List_Classes as $List_Classe){
-
+            foreach ($List_Classes as $List_Classes){
                 $My_Classes= New Classroom();
-                $My_Classes->Name_class	 = ['en' => $List_Classe['Name_class_en'], 'ar' => $List_Classe['Name']];
-                $My_Classes->grade_id= $List_Classe['Grade_id'];
+                $My_Classes->Name_class	 = ['en' => $List_Classes['Name_class_en'], 'ar' => $List_Classes['Name']];
+                $My_Classes->grade_id= $List_Classes['Grade_id'];
                 $My_Classes->save();
 
             }
@@ -82,6 +76,7 @@ class ClassroomController extends Controller
 
   }
 
+
     public function delete_all(Request $request){
       $delete_all_id = explode(",", $request->delete_all_id);
         Classroom::whereIn('id', $delete_all_id)->Delete();
@@ -89,12 +84,13 @@ class ClassroomController extends Controller
         return redirect()->route('Classrooms.index');
     }
 
+
     public function Filter_Classes(Request $request)
     {
-        $Grades = Grade::all();
-        $Search = Classroom::select('*')->where('grade_id','=',$request->grade_id)->get();
-        return view('Pages.My_Classes.My_Classes',compact('Grades'))->withDetails($Search);
 
+        $Grades = Grade::all();
+        $Search = Classroom::select('*')->where('grade_id',$request->grade_id)->get();
+        return view('Pages.My_Classes.index',compact('Grades'))->withDetails($Search);
     }
 
 }

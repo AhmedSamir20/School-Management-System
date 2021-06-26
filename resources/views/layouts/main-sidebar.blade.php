@@ -141,6 +141,7 @@
                         </a>
                         <ul id="Accounts-menu" class="collapse" data-parent="#sidebarnav">
                             <li> <a href="{{route('Fees.index')}}">{{__('Fees.study_fee')}}</a> </li>
+                            <li> <a href="{{route('Fees_Invoices.index')}}">الفواتير</a> </li>
                         </ul>
                     </li>
 

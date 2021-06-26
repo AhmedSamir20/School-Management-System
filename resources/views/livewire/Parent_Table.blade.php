@@ -27,9 +27,12 @@
                 <td>{{ $my_parent->Phone_Father }}</td>
                 <td>{{ $my_parent->Job_Father }}</td>
                 <td>
-                    <button wire:click="edit({{ $my_parent->id }})" title="{{ trans('Grades_trans.Edit') }}"
-                            class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></button>
-                    <button type="button" class="btn btn-danger btn-sm" wire:click="delete({{ $my_parent->id }})" title="{{ trans('Grades_trans.Delete') }}"><i class="fa fa-trash"></i></button>
+                    <button wire:click="edit({{ $my_parent->id }})" title="{{ trans('Grades_trans.Edit') }}" class="btn btn-primary btn-sm">
+                        <i class="fa fa-edit"></i>
+                    </button>
+                    <button type="button" class="btn btn-danger btn-sm" wire:click="delete({{ $my_parent->id }})" title="{{ trans('Grades_trans.Delete') }}">
+                        <i class="fa fa-trash"></i>
+                    </button>
                 </td>
             </tr>
         @endforeach

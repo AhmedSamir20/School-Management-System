@@ -43,25 +43,20 @@
                                         @isset($fees)
                                             @foreach($fees as $fee)
                                                 <tr>
-                                                    <td>{{ $loop->iteration }}</td>
+                                                    <td>{{$loop->iteration }}</td>
                                                     <td>{{$fee->title}}</td>
-                                                    <td>{{ number_format($fee->amount, 2) }}</td>
+                                                    <td>{{number_format($fee->amount, 2)}}</td>
                                                     <td>{{$fee->grade->Name}}</td>
                                                     <td>{{$fee->classroom->Name_class}}</td>
                                                     <td>{{$fee->year}}</td>
                                                     <td>{{$fee->description}}</td>
                                                     <td>
-                                                        <a href="{{route('Fees.edit',$fee->id)}}"
-                                                           class="btn btn-info btn-sm" role="button"
+                                                        <a href="{{route('Fees.edit',$fee->id)}}" class="btn btn-info btn-sm" role="button"
                                                            aria-pressed="true"><i class="fa fa-edit"></i></a>
-                                                        <button type="button" class="btn btn-danger btn-sm"
-                                                                data-toggle="modal"
-                                                                data-target="#Delete_Fee{{ $fee->id }}"
-                                                                title="{{ trans('Grades_trans.Delete') }}"><i
-                                                                class="fa fa-trash"></i></button>
-                                                        <a href="#" class="btn btn-warning btn-sm" role="button"
-                                                           aria-pressed="true"><i class="far fa-eye"></i></a>
-
+                                                        <button type="button" class="btn btn-danger btn-sm"  data-toggle="modal"
+                                                          data-target="#Delete_Fee{{ $fee->id }}" title="{{ trans('Grades_trans.Delete') }}"><i
+                                                           class="fa fa-trash"></i></button>
+                                                        <a href="#" class="btn btn-warning btn-sm" role="button"  aria-pressed="true"><i class="far fa-eye"></i></a>
                                                     </td>
                                                 </tr>
                                                 @include('Pages.Fees.delete')

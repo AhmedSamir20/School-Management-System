@@ -11,22 +11,22 @@ use Illuminate\Http\Request;
 class GradeController extends Controller
 {
 
-
     public function index()
     {
         $Grades = Grade::all();
-        return view('Pages.Grades.grades', compact('Grades'));
+        return view('Pages.Grades.index', compact('Grades'));
     }
 
     public function store(StoreGrades $request)
     {
 
-
         try {
-            $Grade = new Grade();
-            $Grade->Name = ['en' => $request->Name_en, 'ar' => $request->Name];
-            $Grade->Notes = $request->Notes;
-            $Grade->save();
+
+            Grade::create([
+                'Name'  => ['en' => $request->Name_en, 'ar' => $request->Name],
+                'Notes' => $request->Notes,
+            ]);
+
             toastr()->success(__('message.success'));
             return redirect()->route('Grades.index');
         } catch (\Exception $e) {
@@ -72,4 +72,4 @@ class GradeController extends Controller
 
 }
 
-?>
+

@@ -2,131 +2,85 @@
 @section('css')
     @toastr_css
 @section('title')
-    {{trans('main-trans.student-promotion')}}
+    {{trans('main-trans.student-list')}}
 @stop
 @endsection
 @section('page-header')
     <!-- breadcrumb -->
 @section('PageTitle')
-    {{trans('main-trans.student-promotion')}}
+    {{trans('main-trans.student-list')}}
 @stop
 <!-- breadcrumb -->
 @endsection
 @section('content')
     <!-- row -->
     <div class="row">
-
         <div class="col-md-12 mb-30">
             <div class="card card-statistics h-100">
                 <div class="card-body">
+                    <div class="col-xl-12 mb-30">
+                        <div class="card card-statistics h-100">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Delete_all">
+                                    {{__('Students_trans.return_all')}}
+                                </button><br><br><br>
+                                <div class="table-responsive">
+                                    <table id="datatable" class="table  table-hover table-sm table-bordered p-0"
+                                           data-page-length="50"
+                                           style="text-align: center">
+                                        <thead>
+                                        <tr>
+                                            <th class="alert-info">#</th>
+                                            <th class="alert-info">{{trans('Students_trans.name')}}</th>
+                                            <th class="alert-danger">{{__('Students_trans.Previous-school-grade')}}</th>
+                                            <th class="alert-danger">{{__('Students_trans.previous-school-year')}}</th>
+                                            <th class="alert-danger">{{__('Students_trans.Previous-school-classroom')}}</th>
+                                            <th class="alert-danger">{{__('Students_trans.Previous-school-section')}}</th>
 
-                    @if (Session::has('error_promotions'))
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                            <strong>{{Session::get('error_promotions')}}</strong>
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                    @endif
+                                            <th class="alert-success">{{__('Students_trans.current-school-grade')}}</th>
+                                            <th class="alert-success">{{__('Students_trans.current-school-year')}}</th>
+                                            <th class="alert-success">{{__('Students_trans.current-school-classroom')}}</th>
+                                            <th class="alert-success">{{__('Students_trans.current-school-section')}}</th>
+                                            <th>{{trans('Students_trans.Processes')}}</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
 
-                    <h6 style="color: red;font-family: Cairo">{{__('Students_trans.The-old-school-stage')}}</h6><br>
+                                        @foreach($promotions as $promotion)
+                                            <tr>
+                                                <td>{{ $loop->index+1 }}</td>
+                                                <td>{{$promotion->student->name}}</td>
+                                                <td>{{$promotion->f_grade->Name}}</td>
+                                                <td>{{$promotion->from_academic_year}}</td>
+                                                <td>{{$promotion->f_classroom->Name_class}}</td>
+                                                <td>{{$promotion->f_section->Name_Section}}</td>
+                                                <td>{{$promotion->t_grade->Name}}</td>
+                                                <td>{{$promotion->to_academic_year}}</td>
+                                                <td>{{$promotion->t_classroom->Name_class}}</td>
+                                                <td>{{$promotion->t_section->Name_Section}}</td>
 
-                    <form method="post" action="{{ route('Promotions.store') }}">
-                        @csrf
-                        <div class="form-row">
-                            <div class="form-group col">
-                                <label for="inputState">{{trans('Students_trans.Grade')}}</label>
-                                <select class="custom-select mr-sm-2" name="Grade_id" required>
-                                    <option selected disabled>{{trans('Parent_trans.Choose')}}...</option>
-                                    @foreach($Grades as $Grade)
-                                        <option value="{{$Grade->id}}">{{$Grade->Name}}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                            <div class="form-group col">
-                                <label for="Classroom_id">{{trans('Students_trans.classrooms')}} : <span
-                                        class="text-danger">*</span></label>
-                                <select class="custom-select mr-sm-2" name="Classroom_id" required>
 
-                                </select>
-                            </div>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#Delete_one{{$promotion->id}}">{{__('Students_trans.return_student')}}</button>
+                                                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#">{{__('Students_trans.Graduated_student')}} </button>
+                                                </td>
+                                            </tr>
+                                                @include('Pages.Students.Promotion.delete_all')
+                                                @include('Pages.Students.Promotion.delete_one')
+                                        @endforeach
 
-                            <div class="form-group col">
-                                <label for="section_id">{{trans('Students_trans.section')}} : </label>
-                                <select class="custom-select mr-sm-2" name="section_id" required>
-
-                                </select>
-                            </div>
-
-                            <div class="form-group col">
-                                <label for="academic_year">{{trans('Students_trans.academic_year')}} : <span
-                                        class="text-danger">*</span></label>
-                                <select class="custom-select mr-sm-2" name="academic_year">
-                                    <option selected disabled>{{trans('Parent_trans.Choose')}}...</option>
-                                    @php
-                                        $current_year = date("Y")
-                                    @endphp
-                                    @for($year=$current_year; $year<=$current_year +1 ;$year++)
-                                        <option value="{{ $year}}">{{ $year }}</option>
-                                    @endfor
-                                </select>
-                            </div>
-                        </div>
-                        <br><h6 style="color: red;font-family: Cairo">{{__('Students_trans.The-new-school-stage')}}</h6><br>
-
-                        <div class="form-row">
-                            <div class="form-group col">
-                                <label for="inputState">{{trans('Students_trans.Grade')}}</label>
-                                <select class="custom-select mr-sm-2" name="Grade_id_new" >
-                                    <option selected disabled>{{trans('Parent_trans.Choose')}}...</option>
-                                    @foreach($Grades as $Grade)
-                                        <option value="{{$Grade->id}}">{{$Grade->Name}}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                            <div class="form-group col">
-                                <label for="Classroom_id">{{trans('Students_trans.classrooms')}}: <span
-                                        class="text-danger">*</span></label>
-                                <select class="custom-select mr-sm-2" name="Classroom_id_new" >
-
-                                </select>
-                            </div>
-                            <div class="form-group col">
-                                <label for="section_id">:{{trans('Students_trans.section')}} </label>
-                                <select class="custom-select mr-sm-2" name="section_id_new" >
-
-                                </select>
-                            </div>
-
-                            <div class="form-group col">
-                                <label for="academic_year">{{trans('Students_trans.academic_year')}} : <span
-                                        class="text-danger">*</span></label>
-                                <select class="custom-select mr-sm-2" name="academic_year_new">
-                                    <option selected disabled>{{trans('Parent_trans.Choose')}}...</option>
-                                    @php
-                                        $current_year = date("Y")
-                                    @endphp
-                                    @for($year=$current_year; $year<=$current_year +1 ;$year++)
-                                        <option value="{{ $year}}">{{ $year }}</option>
-                                    @endfor
-                                </select>
+                                    </table>
+                                </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">{{(__('Students_trans.submit'))}}</button>
-                    </form>
-
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
-
     <!-- row closed -->
 @endsection
 @section('js')
-
     @toastr_js
     @toastr_render
-
-    @include('Pages.Students.AJAX_Fill_Form.index')
 @endsection

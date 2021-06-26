@@ -13,11 +13,18 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UserSeeder::class);
 
-      $this->call(BloodTableSeeder::class);
-      $this->call(NationalitiesTableSeeder::class);
-      $this->call(religionTableSeeder::class);
-      $this->call(SpecializationsTableSeeder::class);
-      $this->call(GenderTableSeeder::class);
-      $this->call(AdminTableSeeder::class);
+
+
+        $this->call(AdminTableSeeder::class);
+        $this->call(GradeTableSeeder::class);
+        $this->call(ClassroomTableSeeder::class);
+        $this->call(SectionsTableSeeder::class);
+        $this->call(BloodTableSeeder::class);
+        $this->call(NationalitiesTableSeeder::class);
+        $this->call(religionTableSeeder::class);
+        $this->call(SpecializationsTableSeeder::class);
+        $this->call(GenderTableSeeder::class);
+        $this->call(ParentsTableSeeder::class);
+        $this->call(StudentsTableSeeder::class);
     }
 }

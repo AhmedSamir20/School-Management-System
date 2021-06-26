@@ -2,7 +2,94 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cb23931-db21-4a14-be98-dbad84f9728f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/Pages/Students/Promotion/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Classrooms/ClassroomController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Classrooms/ClassroomController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Grades/GradeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Grades/GradeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Sections/SectionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Sections/SectionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Students/FeesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Fees/FeesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Students/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Students/StudentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Teachers/TeacherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Teachers/TeacherController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/AddParent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/AddParent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/FeesRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/FeesRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Interfaces/Teacher/TeacherRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Interfaces/Teacher/TeacherRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Fee.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Fee.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Section.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Section.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RepoServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepoServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Repository/Fees/FeesRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Fees/FeesRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/Graduated/StudentGraduatedRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Graduated/StudentGraduatedRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/Promotions/StudentPromotionRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Promotions/StudentPromotionRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/Students/StudentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Students/StudentRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/Teacher/TeacherRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Teacher/TeacherRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_01_002313_create_classrooms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_01_002313_create_classrooms_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_01_002313_create_grades_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_01_213711_create_teacher_section_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_14_220904_create_foreign_keys.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_28_220904_create_foreign_keys.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_02_005719_create_fees_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_02_005719_create_fees_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/AdminTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AdminTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/BloodTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/BloodTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/GenderTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/GenderTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/GGGGGGGGGG/StockSnap_IVZDQN85VY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/dfgbdfbj/product.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/dfhlk f kdlh/StockSnap_IVZDQN85VY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/dsgdsgdsgd/product.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/dsgsdbsdkjb/merge 1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/etwrtk/product.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/fdbfsbdf/StockSnap_IVZDQN85VY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/fdgbkjsd/StockSnap_IVZDQN85VY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/ffffff/StockSnap_IVZDQN85VY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/ffffff/w.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/fghdfhfdh/product.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/gfjgjfgjfg/StockSnap_IVZDQN85VY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/gftfhfghd/StockSnap_IVZDQN85VY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/hbfdhfdh/Captureef.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/hbfdhfdh/download.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/hbfdhfdh/fff.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/jhgfjgf/product.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/sdgsdgs/StockSnap_IVZDQN85VY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/sdgsdgs/w.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/sdsdgsdgsdg/merge 1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/sdsdvsd/StockSnap_IVZDQN85VY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/sdvdssd/product.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/sdvsdvsd/StockSnap_IVZDQN85VY (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/sdvsdvsd/product.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/sgwergewr/merge 1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/tykjytkt/StockSnap_IVZDQN85VY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/احمد سمير/StockSnap_IVZDQN85VY (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/احمد سمير/download.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/attachments/students/احمد/StockSnap_IVZDQN85VY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/Fees.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/Fees.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/Students_trans.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/Students_trans.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/Teacher_trans.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/Teacher_trans.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/Fees.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/Fees.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/My_Classes_trans.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/My_Classes_trans.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/Students_trans.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/Students_trans.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/Teacher_trans.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/Teacher_trans.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Fees/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Fees/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Fees/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Fees/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Grades/grades.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Grades/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/My_Classes/My_Classes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/My_Classes/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Sections/Sections.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Sections/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Sections/addForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Sections/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Sections/deleteForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Sections/delete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Sections/editForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Sections/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Students/Promotion/Delete_all.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Students/Promotion/delete_all.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Students/Promotion/Management.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Students/Promotion/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Students/Promotion/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Students/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Students/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Students/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Students/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Students/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Students/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Students/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Students/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Teachers/Teachers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Teachers/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/footer-scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/footer-scripts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/Parent_Table.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/Parent_Table.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +138,9 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/resources/views/Pages/Sections/Sections.blade.php" root0="SKIP_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/Pages/Students/create.blade.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/Pages/Sections/edit.blade.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/Pages/Sections/index.blade.php" root0="SKIP_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -173,6 +262,7 @@
       <option value="200" />
       <option value="300" />
     </hideBySeverity>
+    <option name="showToolbar" value="false" />
     <option name="sortBySeverity" value="false" />
   </component>
   <component name="ProjectId" id="1nq23Okwfe9kNjSQUvalyenqfPu" />
@@ -186,7 +276,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="ToolWindowProblems.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/en" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/Pages/Teachers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -194,23 +284,23 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\project\School Management System\resources\views\Pages\Teachers" />
       <recent name="F:\project\School Management System\resources\lang\en" />
       <recent name="F:\project\School Management System\resources\views\Pages\Students" />
       <recent name="F:\project\School Management System\app\Interfaces\Students" />
       <recent name="F:\project\School Management System\app\Http\Controllers\Students" />
-      <recent name="C:\wamp64\www\projects_laravel\School Management System\resources\views\Pages\Sections" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\project\School Management System\app\Http\Controllers\Fees" />
       <recent name="F:\project\School Management System\app\Interfaces" />
       <recent name="F:\project\School Management System\database\migrations" />
       <recent name="F:\project\School Management System\app\Interfaces\Teacher" />
       <recent name="F:\project\School Management System\app\Repository\Teacher" />
-      <recent name="C:\wamp64\www\projects_laravel\School Management System\app\Http\Controllers\Teachers" />
     </key>
   </component>
   <component name="RunManager">
@@ -276,7 +366,35 @@
       <workItem from="1622554727322" duration="8215000" />
       <workItem from="1622588383792" duration="484000" />
       <workItem from="1622590734569" duration="9160000" />
-      <workItem from="1622638927962" duration="5448000" />
+      <workItem from="1622638927962" duration="7529000" />
+      <workItem from="1622669233007" duration="8931000" />
+      <workItem from="1622726182437" duration="4021000" />
+      <workItem from="1622738436142" duration="7373000" />
+      <workItem from="1622764068714" duration="10558000" />
+      <workItem from="1622900092918" duration="2441000" />
+      <workItem from="1622903004653" duration="1575000" />
+      <workItem from="1622905896857" duration="102000" />
+      <workItem from="1622906352054" duration="94000" />
+      <workItem from="1622911839846" duration="8367000" />
+      <workItem from="1622931030591" duration="2539000" />
+      <workItem from="1622934244583" duration="2896000" />
+      <workItem from="1622937965066" duration="9728000" />
+      <workItem from="1623086351645" duration="10089000" />
+      <workItem from="1623105279845" duration="6379000" />
+      <workItem from="1623231114031" duration="13849000" />
+      <workItem from="1623255434060" duration="3213000" />
+      <workItem from="1623268109790" duration="1107000" />
+      <workItem from="1623281233974" duration="2165000" />
+      <workItem from="1623284672751" duration="1006000" />
+      <workItem from="1623322015300" duration="7083000" />
+      <workItem from="1623447773964" duration="14831000" />
+      <workItem from="1623628627594" duration="1027000" />
+      <workItem from="1624499539726" duration="298000" />
+      <workItem from="1624561326536" duration="11002000" />
+      <workItem from="1624626868752" duration="7758000" />
+      <workItem from="1624657817717" duration="437000" />
+      <workItem from="1624707043089" duration="1663000" />
+      <workItem from="1624720102045" duration="8153000" />
     </task>
     <servers />
   </component>
@@ -284,6 +402,26 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/database/migrations/2021_05_03_060842_create_students_table.php</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

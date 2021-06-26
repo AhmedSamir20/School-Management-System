@@ -15,10 +15,11 @@ class Section extends Model
         'Name_Section',
         'grade_id',
         'class_id',
+        'Status',
     ];
     public $timestamps = true;
 
-    // علاقة بين الاقسام والصفوف لجلب اسم الصف في جدول الاقسام
+
 
     public function My_classs()
     {

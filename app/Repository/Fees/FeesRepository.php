@@ -13,7 +13,6 @@ class FeesRepository implements FeesRepositoryInterface
     public function index()
     {
         $fees = Fee::all();
-
         return view('Pages.Fees.index', compact('fees'));
     }
 
@@ -32,8 +31,9 @@ class FeesRepository implements FeesRepositoryInterface
                 'amount'        => $request->amount,
                 'Grade_id'      => $request->Grade_id,
                 'Classroom_id'  => $request->Classroom_id,
+                'year'          => $request->year,
+                'Fee_type'      => $request->Fee_type,
                 'description'   => $request->description,
-                'year'          => $request->year
 
             ]);
 

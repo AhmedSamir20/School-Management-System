@@ -9,72 +9,72 @@ use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
-    private $Student;
+    private $Students;
 
     public function __construct(StudentRepositoryInterface $Student)
     {
-        $this->Student = $Student;
+        $this->Students = $Student;
     }
 
     public function index()
     {
-        return $this->Student->index();
+        return $this->Students->index();
     }
 
     public function create()
     {
-        return $this->Student->create();
+        return $this->Students->create();
     }
 
     public function store(StudentsRequest $request)
     {
-        return $this->Student->store($request);
+        return $this->Students->store($request);
     }
 
     public function show($id)
     {
-        return $this->Student->show($id);
+        return $this->Students->show($id);
     }
 
     public function edit($id)
     {
-        return $this->Student->edit($id);
+        return $this->Students->edit($id);
     }
 
     public function update(Request $request)
     {
-        return $this->Student->update($request);
+        return $this->Students->update($request);
     }
 
     public function destroy(Request $request)
     {
-        return $this->Student->destroy($request);
+        return $this->Students->destroy($request);
     }
 
 
     public function Get_classrooms($id)
     {
-        return $this->Student->Get_classrooms($id);
+        return $this->Students->Get_classrooms($id);
     }
 
     public function Get_Sections($id)
     {
-        return $this->Student->Get_Sections($id);
+        return $this->Students->Get_Sections($id);
     }
 
     public function Upload_attachment(Request $request)
     {
-        return $this->Student->Upload_attachment($request);
+        return $this->Students->Upload_attachment($request);
     }
 
     public function Download_attachment($studentsname,$filename)
     {
-        return $this->Student->Download_attachment($studentsname,$filename);
+        return $this->Students->Download_attachment($studentsname,$filename);
     }
 
     public function Delete_attachment(Request $request)
     {
-        return $this->Student->Delete_attachment($request);
+        return $this->Students->Delete_attachment($request);
     }
 
 

@@ -13,9 +13,20 @@ class StudentPromotionRepository implements StudentPromotionRepositoryInterface
 
     public function index()
     {
-        $Grades = Grade::all();
-        return view('Pages.Students.Promotion.index', compact('Grades'));
+        $promotions = Promotion::all();
+        return view('Pages.Students.Promotion.index', compact('promotions'));
+
+
     }
+
+    public function create()
+    {
+
+        $Grades = Grade::all();
+        return view('Pages.Students.Promotion.create', compact('Grades'));
+    }
+
+
 
     public function store($request)
     {
@@ -25,8 +36,9 @@ class StudentPromotionRepository implements StudentPromotionRepositoryInterface
 
             $students   = Student::where('Grade_id', $request->Grade_id)
                           ->where('Classroom_id', $request->Classroom_id)
-                          ->where('academic_year', $request->academic_year)
-                          ->where('section_id', $request->section_id)->get();
+                          ->where('section_id', $request->section_id)
+                          ->where('academic_year', $request->academic_year)->get();
+
 
             if ($students->count() < 1) {
                 return redirect()->back()->with('error_promotions', __('Students_trans.Error_no_data'));
@@ -74,12 +86,6 @@ class StudentPromotionRepository implements StudentPromotionRepositoryInterface
 
     //=============student promotion Management===========
 
-    public function create()
-    {
-
-        $promotions = Promotion::all();
-        return view('Pages.Students.Promotion.Management', compact('promotions'));
-    }
 
     public function destroy($request)
     {
