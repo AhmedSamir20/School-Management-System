@@ -2,7 +2,7 @@
 @section('css')
     @toastr_css
 @section('title')
-    سند قبض
+    {{__('Receipt.receipt')}}
 @stop
 @endsection
 @section('page-header')
