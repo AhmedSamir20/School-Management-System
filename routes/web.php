@@ -94,13 +94,21 @@ Route::group(
 
     });
 
-
+    //==============================Fees============================
     Route::group(['namespace'=>'Fees'],function (){
 
         //-------------------------- Students Fees------------------
         Route::resource('Fees','FeesController');
         //-------------------------- Students Fees------------------
         Route::resource('Fees_Invoices','FeeInvoicesController');
+
+    });
+
+    //==============================Receipts============================
+    Route::group(['namespace'=>'Receipts'],function (){
+        //-------------------------- Receipts Fees------------------
+        Route::resource('receipt_students','ReceiptStudentsController');
+
 
     });
 });

@@ -3,6 +3,7 @@ return[
     'name'                  =>'Name',
     'add_fees'              =>'Add new fees',
     'Add_invoice'           =>'Add a new invoice',
+    'Invoices'              =>'Invoices',
     'edit_fees'             =>'Edit new fees',
     'study_fee'             =>'Study fee',
     'edit_invoices'         =>'edit invoices',

@@ -55,23 +55,6 @@
                         </ul>
                     </li>
 
-
-                    <!-- students-->
-{{--                    <li>--}}
-{{--                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#students-menu">--}}
-{{--                            <div class="pull-left"><i class="fas fa-user-graduate"></i></i></i><span--}}
-{{--                                    class="right-nav-text">{{trans('main-trans.students')}}</span></div>--}}
-{{--                            <div class="pull-right"><i class="ti-plus"></i></div>--}}
-{{--                            <div class="clearfix"></div>--}}
-{{--                        </a>--}}
-{{--                        <ul id="students-menu" class="collapse" data-parent="#sidebarnav">--}}
-{{--                            <li> <a href="{{route('Students.index')}}">{{__('main-trans.student-list')}}</a> </li>--}}
-{{--                            <li> <a href="{{route('Promotions.index')}}">{{__('main-trans.student-promotion')}}</a> </li>--}}
-{{--                            <li> <a href="{{route('Promotions.create')}}">{{__('main-trans.student-promotion-man')}}</a> </li>--}}
-{{--                        </ul>--}}
-{{--                    </li>--}}
-
-                <!-- students-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#students-menu"><i class="fas fa-user-graduate"></i>{{trans('main-trans.students')}}<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
                         <ul id="students-menu" class="collapse">
@@ -141,7 +124,7 @@
                         </a>
                         <ul id="Accounts-menu" class="collapse" data-parent="#sidebarnav">
                             <li> <a href="{{route('Fees.index')}}">{{__('Fees.study_fee')}}</a> </li>
-                            <li> <a href="{{route('Fees_Invoices.index')}}">الفواتير</a> </li>
+                            <li> <a href="{{route('Fees_Invoices.index')}}">{{__('Fees.Invoices')}}</a> </li>
                         </ul>
                     </li>
 
