@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4cb23931-db21-4a14-be98-dbad84f9728f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RepoServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepoServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_11_233102_create_student_accounts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_26_233102_create_student_accounts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/Fees.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/Fees.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/Fees.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/Fees.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Students/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Students/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-    </list>
+    <list default="true" id="4cb23931-db21-4a14-be98-dbad84f9728f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -319,7 +308,7 @@
       <workItem from="1624720102045" duration="8320000" />
       <workItem from="1624747603998" duration="5002000" />
       <workItem from="1624797851832" duration="4987000" />
-      <workItem from="1624828692153" duration="2356000" />
+      <workItem from="1624828692153" duration="3158000" />
     </task>
     <servers />
   </component>
