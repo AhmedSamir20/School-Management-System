@@ -45,8 +45,8 @@
                     <!-- sections-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#sections-menu">
-                            <div class="pull-left"><i class="fas fa-chalkboard"></i><span>
-                                    class="right-nav-text">{{trans('main-trans.sections')}}</span></div>
+                            <div class="pull-left"><i class="fas fa-chalkboard"></i>
+                                <span class="right-nav-text">{{trans('main-trans.sections')}}</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
                         </a>
@@ -89,8 +89,8 @@
                     <!-- Teachers-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#Teachers-menu">
-                            <div class="pull-left"><i class="fas fa-chalkboard-teacher"></i><span>
-                                    class="right-nav-text">{{trans('main-trans.Teachers')}}</span></div>
+                            <div class="pull-left"><i class="fas fa-chalkboard-teacher"></i>
+                                <span class="right-nav-text">{{trans('main-trans.Teachers')}}</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
                         </a>
@@ -125,6 +125,9 @@
                         <ul id="Accounts-menu" class="collapse" data-parent="#sidebarnav">
                             <li> <a href="{{route('Fees.index')}}">{{__('Fees.study_fee')}}</a> </li>
                             <li> <a href="{{route('Fees_Invoices.index')}}">{{__('Fees.Invoices')}}</a> </li>
+                            <li> <a href="{{route('receipt_students.index')}}">{{__('Receipt.receipt')}}</a> </li>
+                            <li> <a href="{{route('ProcessingFee.index')}}">{{__('Processing.Exclude_fees')}}</a> </li>
+                            <li> <a href="{{route('Payment_students.index')}}">{{__('Processing.exchange_bonds')}} </a> </li>
                         </ul>
                     </li>
 
@@ -136,9 +139,7 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="Attendance-icon" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="fontawesome-icon.html">font Awesome</a> </li>
-                            <li> <a href="themify-icons.html">Themify icons</a> </li>
-                            <li> <a href="weather-icon.html">Weather icons</a> </li>
+                            <li> <a href="{{route('Attendance.index')}}">قائمه الحظور</a> </li>
                         </ul>
                     </li>
 

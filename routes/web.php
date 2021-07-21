@@ -101,6 +101,7 @@ Route::group(
         Route::resource('Fees','FeesController');
         //-------------------------- Students Fees------------------
         Route::resource('Fees_Invoices','FeeInvoicesController');
+        Route::resource('ProcessingFee','ProcessingFeeController');
 
     });
 
@@ -110,6 +111,18 @@ Route::group(
         Route::resource('receipt_students','ReceiptStudentsController');
 
 
+    });
+
+    //==============================Payment============================
+    Route::group(['namespace'=>'Payment'],function (){
+        //-------------------------- Receipts Fees------------------
+        Route::resource('Payment_students', 'PaymentController');
+    });
+
+    //==============================Attendance============================
+    Route::group(['namespace'=>'Attendance'],function (){
+        //-------------------------- Attendances ------------------
+        Route::resource('Attendance', 'AttendanceController');
     });
 });
 

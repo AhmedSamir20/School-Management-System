@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4cb23931-db21-4a14-be98-dbad84f9728f" name="Default Changelist" comment="" />
+    <list default="true" id="4cb23931-db21-4a14-be98-dbad84f9728f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/Pages/ProcessingFee/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RepoServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepoServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/Promotions/StudentPromotionRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Promotions/StudentPromotionRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_26_233102_create_student_accounts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_07_21_233102_create_student_accounts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_27_000511_create_fund_accounts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_27_000511_create_fund_accounts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Students/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Students/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Pages/Students/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pages/Students/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,9 +63,9 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/resources/views/Pages/Students/create.blade.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/resources/views/Pages/Sections/edit.blade.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/views/Pages/Sections/index.blade.php" root0="SKIP_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/Pages/Sections/edit.blade.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/Pages/Students/create.blade.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -201,10 +215,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\project\School Management System\resources\lang\en" />
+      <recent name="F:\project\School Management System\resources\views\Pages\Attendance" />
+      <recent name="F:\project\School Management System\app\Repository" />
+      <recent name="F:\project\School Management System\resources\views\Pages\Payment" />
       <recent name="F:\project\School Management System\resources\views\Pages\Teachers" />
-      <recent name="F:\project\School Management System\resources\views\Pages\Students" />
-      <recent name="F:\project\School Management System\app\Interfaces\Students" />
-      <recent name="F:\project\School Management System\app\Http\Controllers\Students" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\project\School Management System\app\Http\Controllers\Fees" />
@@ -308,7 +322,15 @@
       <workItem from="1624720102045" duration="8320000" />
       <workItem from="1624747603998" duration="5002000" />
       <workItem from="1624797851832" duration="4987000" />
-      <workItem from="1624828692153" duration="3158000" />
+      <workItem from="1624828692153" duration="3307000" />
+      <workItem from="1625125308697" duration="31000" />
+      <workItem from="1625125359481" duration="754000" />
+      <workItem from="1625480512854" duration="797000" />
+      <workItem from="1625679632236" duration="1711000" />
+      <workItem from="1625682082605" duration="39000" />
+      <workItem from="1626738369448" duration="7041000" />
+      <workItem from="1626776386291" duration="7904000" />
+      <workItem from="1626816458569" duration="11410000" />
     </task>
     <servers />
   </component>
@@ -339,6 +361,16 @@
           <url>file://$PROJECT_DIR$/resources/views/layouts/main-sidebar.blade.php</url>
           <line>1</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/Fees/ProcessingFeeController.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/Pages/Attendance/index.blade.php</url>
+          <line>38</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
