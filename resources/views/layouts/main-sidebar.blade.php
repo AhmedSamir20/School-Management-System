@@ -139,7 +139,7 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="Attendance-icon" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="{{route('Attendance.index')}}">قائمه الحظور</a> </li>
+                            <li> <a href="{{route('Attendance.index')}}">{{__('Attendance.list_Attendance') }}</a> </li>
                         </ul>
                     </li>
 

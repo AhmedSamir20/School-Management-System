@@ -2,13 +2,13 @@
 @section('css')
     @toastr_css
 @section('title')
-    {{ trans('Sections_trans.title_page') }}: الحضور والغياب
+     {{__('Attendance.Attendance')}}
 @stop
 @endsection
 @section('page-header')
     <!-- breadcrumb -->
 @section('PageTitle')
-    {{ trans('Sections_trans.title_page') }}: الحضور والغياب
+    {{ trans('Sections_trans.title_page') }} : {{__('Attendance.Attendance')}}
 @stop
 <!-- breadcrumb -->
 @endsection
@@ -54,11 +54,11 @@
                                                                 <thead>
                                                                 <tr class="text-dark">
                                                                     <th>#</th>
-                                                                    <th>{{ trans('Sections_trans.Name_Section') }}
-                                                                    </th>
+                                                                    <th>{{ trans('Sections_trans.Name_Section') }}</th>
                                                                     <th>{{ trans('Sections_trans.Name_Class') }}</th>
                                                                     <th>{{ trans('Sections_trans.Status') }}</th>
                                                                     <th>{{ trans('Sections_trans.Processes') }}</th>
+
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -70,11 +70,11 @@
                                                                         <td>{{ $list_Sections->Name_Section }}</td>
                                                                         <td>{{ $list_Sections->My_classs->Name_class }}</td>
                                                                         <td>
-                                                                            <label class="badge badge-{{$list_Sections->Status == 1 ? 'success':'danger'}}">{{$list_Sections->Status == 1 ? 'نشط':'غير نشط'}}</label>
+                                                                            <label class="badge badge-{{$list_Sections->Status == 1 ? 'success':'danger'}}">{{$list_Sections->Status == 1 ? __('Attendance.Active'):__('Attendance.Inactive')}}</label>
                                                                         </td>
 
                                                                         <td>
-                                                                            <a href="{{route('Attendance.show',$list_Sections->id)}}" class="btn btn-warning btn-sm" role="button" aria-pressed="true">قائمة الطلاب</a>
+                                                                            <a href="{{route('Attendance.show',$list_Sections->id)}}" class="btn btn-warning btn-sm" role="button" aria-pressed="true">{{__('Attendance.list_student')}}</a>
                                                                         </td>
                                                                     </tr>
                                                                 @endforeach

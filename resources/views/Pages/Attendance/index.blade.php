@@ -2,13 +2,13 @@
 @section('css')
     @toastr_css
 @section('title')
-    قائمة الحضور والغياب للطلاب
+{{__('Attendance.Attendance')}}
 @stop
 @endsection
 @section('page-header')
     <!-- breadcrumb -->
 @section('PageTitle')
-    قائمة الحضور والغياب للطلاب
+    {{__('Attendance.Attendance')}}
 @stop
 <!-- breadcrumb -->
 @endsection
@@ -35,7 +35,7 @@
 
 
 
-    <h5 style="font-family: 'Cairo', sans-serif;color: red"> تاريخ اليوم : {{ date('Y-m-d') }}</h5>
+    <h5 style="font-family: 'Cairo', sans-serif;color: red"> {{__('Attendance.today_date')}} : {{ date('Y-m-d') }}</h5>
     <form method="post" action="{{ route('Attendance.store') }}">
 
         @csrf
@@ -44,13 +44,13 @@
             <thead>
             <tr>
                 <th class="alert-success">#</th>
-                <th class="alert-success">{{ trans('Students_trans.name') }}</th>
-                <th class="alert-success">{{ trans('Students_trans.email') }}</th>
-                <th class="alert-success">{{ trans('Students_trans.gender') }}</th>
-                <th class="alert-success">{{ trans('Students_trans.Grade') }}</th>
-                <th class="alert-success">{{ trans('Students_trans.classrooms') }}</th>
-                <th class="alert-success">{{ trans('Students_trans.section') }}</th>
-                <th class="alert-success">{{ trans('Students_trans.Processes') }}</th>
+                <th class="alert-success">{{ trans('Attendance.name') }}</th>
+                <th class="alert-success">{{ trans('Attendance.email') }}</th>
+                <th class="alert-success">{{ trans('Attendance.gender') }}</th>
+                <th class="alert-success">{{ trans('Attendance.Grade') }}</th>
+                <th class="alert-success">{{ trans('Attendance.classrooms') }}</th>
+                <th class="alert-success">{{ trans('Attendance.section') }}</th>
+                <th class="alert-success">{{ trans('Attendance.Processes') }}</th>
             </tr>
             </thead>
             <tbody>
@@ -71,14 +71,14 @@
                                 <input name="attendences[{{ $student->id }}]" disabled
                                        {{ $student->attendance()->first()->attendence_status == 1 ? 'checked' : '' }}
                                        class="leading-tight" type="radio" value="presence">
-                                <span class="text-success">حضور</span>
+                                <span class="text-success">{{__('Attendance.presence')}}</span>
                             </label>
 
                             <label class="ml-4 block text-gray-500 font-semibold">
                                 <input name="attendences[{{ $student->id }}]" disabled
                                        {{ $student->attendance()->first()->attendence_status == 0 ? 'checked' : '' }}
                                        class="leading-tight" type="radio" value="absent">
-                                <span class="text-danger">غياب</span>
+                                <span class="text-danger">{{__('Attendance.absent')}}</span>
                             </label>
 
                         @else
@@ -86,13 +86,13 @@
                             <label class="block text-gray-500 font-semibold sm:border-r sm:pr-4">
                                 <input name="attendences[{{ $student->id }}]" class="leading-tight" type="radio"
                                        value="presence">
-                                <span class="text-success">حضور</span>
+                                <span class="text-success">{{__('Attendance.presence')}}</span>
                             </label>
 
                             <label class="ml-4 block text-gray-500 font-semibold">
                                 <input name="attendences[{{ $student->id }}]" class="leading-tight" type="radio"
                                        value="absent">
-                                <span class="text-danger">غياب</span>
+                                <span class="text-danger">{{__('Attendance.absent')}}</span>
                             </label>
 
                         @endif
@@ -108,7 +108,7 @@
             </tbody>
         </table>
         <P>
-            <button class="btn btn-success" type="submit">{{ trans('Students_trans.submit') }}</button>
+            <button class="btn btn-success" type="submit">{{ trans('Attendance.submit') }}</button>
         </P>
     </form><br>
     <!-- row closed -->
